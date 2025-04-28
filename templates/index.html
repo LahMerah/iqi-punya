@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% block title %}Halaman Utama{% endblock %}
+{% block content %}
+<main class="index-main">
+    <h1>HALLOOOO!!</h1>
+    <h1>Selamat datang di website saya</h1>
+    <img src="{{ url_for('static', filename='gambar/kumpul.jpg') }}" alt="Ngumpul!!!" class="kumpul-pic">
+    <p>Muhammad Shidqi Firiya</p>
+    <p> Mahasiswa Teknik Elektro Universitas Padjajaran</p>
+    <p>Web ini akan menjelaskan latar belakang,karakteristik diri, dan pengalaman perkuliahan saya</p>
+</main>
+{% endblock %}

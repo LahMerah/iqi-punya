@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Website{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="static/gambar/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('tentang') }}">Tentang Saya</a>
+            <a href="{{ url_for('kontak') }}">Kontak</a>
+            <a href="{{ url_for('project') }}">Project</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

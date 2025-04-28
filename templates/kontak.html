@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block title %}Halaman Kontak{% endblock %}
+{% block content %}
+<main class="kontak-main">
+    <h1>Kontak dan Sosmed</h1>
+    <div class="tabel-kontak">
+    <img src="{{ url_for('static', filename='gambar/phone.jpg') }}" alt="phone" class="kontak-pic">  
+    <p class="info">Telepon : 08123456789</p>
+    <img src="{{ url_for('static', filename='gambar/mail.jpg') }}" alt="mail" class="kontak-pic">
+    <p>Email     : shidqi.firiya@gmail.com</p>
+    <img src="{{ url_for('static', filename='gambar/instagram.jpg') }}" alt="ig" class="kontak-pic">
+    <p>Instagram : @shidqifiriya</p>
+    <img src="{{ url_for('static', filename='gambar/line.png') }}" alt="line" class="kontak-pic">
+    <p>Line      : shidqiifiriya</p>
+    </div>
+{% endblock %}

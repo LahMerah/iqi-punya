@@ -1,0 +1,30 @@
+{% extends "main.html" %}
+{% block title %}Halaman Project{% endblock %}
+{% block content %}
+<main class="project-main">
+<h1>Project</h1>
+<img src="{{ url_for('static', filename='gambar/projek.jpg') }}" alt="Project" class="project-pic">
+<p> Salah satu proyek yang pernah saya kerjakan adalah pembuatan alat penyiram tanaman otomatis berbasis Arduino. Proyek ini bermula dari ketertarikan saya pada bidang Internet of Things (IoT) dan bagaimana teknologi dapat diterapkan untuk mempermudah kehidupan sehari-hari. Saya melihat potensi besar dalam otomatisasi tugas-tugas rutin, dan pertanian rumahan menjadi salah satu area yang menarik untuk dieksplorasi. Selain itu, proyek ini juga memberikan kesempatan yang sangat baik untuk mengaplikasikan dan memperdalam pemahaman saya mengenai pemrograman mikrokontroler dan sensor, yang merupakan kompetensi penting dalam bidang rekayasa perangkat lunak yang saya tekuni.</p>
+<p> Alat dan bahan yang digunakan pada project ini adalah :</p>
+    <ol>
+    <li> Arduino UNO </li>
+    <li> LCD </li>
+	<li> Sensor Kelembapan Tanah </li>
+	<li> Relay </li>
+	<li> Kabel USB </li>
+	<li> Kabel Jumper </li>
+	<li> Pompa Air </li>
+	<li> Baterai </li>
+	<li> Obeng </li>
+	<li> Gunting </li>
+</ol>
+<p>Cara kerja dari alat ini adalah : </p>
+<ol>
+<li> Sebagai langkah awal, alat ini akan melakukan pembacaan kelembapan tanah melalui sensor soil moisture.</li>
+<li> Saat kelembapan tanah berada di bawah 30%, alat ini akan secara otomatis mengaktifkan pompa air dan memberitahukan melalui LCD dengan tulisan "Tanah Kering".</li>
+<li> Saat kelembapan tanah berada di atas 30%, alat ini akan secara otomatis mematikan pompa air dan memberitahukan melalui LCD dengan tulisan "Tanah Basah".</li>
+<li> Relay pada alat ini berguna sebagai switch yang menyala/menonaktifkan pompa air yang terhubung ke selang</li>
+</ol>
+<p>percobaan ini membutuhkan waktu sekitar 1 minggu dimana saya bekerja bersama tim kelompok saya. bagian tersulit dari project ini adalah saya dan teman kelompok saya baru pertama kali merancang menggunakan arduino uno sehingga kami lumayan kebingungan cara kerjanya. dibagian pengcodean juga kami kesusahan karena lumayan membingungkan cara kerja code dengan arduino UNO. </p>
+</main>
+{% endblock %}
